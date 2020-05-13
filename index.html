@@ -5,8 +5,147 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-logo">
+            <img src="http://placehold.it/138x70" width="138" height="70" alt="Логотип города Седона">
+          </a>
+          <ul class="about_nav-list">
+            <li class="about_nav-item">
+              <a href="#">Информация</a>
+            </li>
+            <li class="about_nav-item">
+              <a href="#">Фото и видео</a>
+            </li>
+          </ul>
+          <ul class="city_nav-list">
+            <li class="city_nav-item">
+              <a href="#">Карта штата</a>
+            </li>
+            <li class="city_nav-item">
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="promo-section">
+          <h1 class="visually-hidden">Официальный сайт города Седона</h1>
+          <img class="main_index-pic" src="http://placehold.it/1200x509" width="1200" height="509" alt="Изображение природы города Седона">
+          <p class="promo-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="promo-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </section>
+        <section class="natural-section main_reason-section">
+          <h2 class="visually-hidden">Главная причина посетить наш город</h2>
+          <div class="reason-container">
+            <h3 class="reason-title white-reason">Настоящий городок</h3>
+            <p class="reason-description">— №1 —</p>
+            <p class="reason-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img class="reason-image" src="http://placehold.it/800x256" width="800" height="256" alt="Изображение достопримечательностей города Седона">
+        </section>
+        <section class="feature-section">
+          <h2 class="visually-hidden">В Седоне развитая инфраструктура</h2>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <h3 class="reason-title">Жильё</h3>
+              <p class="reason-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="reason-title">Еда</h3>
+              <p class="reason-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="reason-title">Сувениры</h3>
+              <p class="reason-description">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </section>
+        <section class="bridge-section main_reason-section">
+          <h2 class="visually-hidden">В Седоне есть очень захватывающие достопримечательности</h2>
+          <div class="reason-container">
+            <h3 class="reason-title white-reason">Там есть Мост дьявола</h3>
+            <p class="reason-description">— №2 —</p>
+            <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <img class="reason-image" src="http://placehold.it/800x256" width="800" height="256" alt="Изображение достопримечательностей города Седона">
+        </section>
+        <section class="other_reasons-section">
+          <h2 class="visually-hidden">Седона имеет массу преимуществ по сравнению с другими городами</h2>
+          <ul class="advantage-list">
+            <li class="advantage-item">
+              <h3 class="reason-title">Небольшая площадь</h3>
+              <p class="reason-description">— №3 —</p>
+              <p class="reason-description">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantage-item">
+              <h3 class="reason-title">Красивая дорога</h3>
+              <p class="reason-description">— №4 —</p>
+              <p class="reason-description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantage-item">
+              <h3 class="reason-title">Мало туристов</h3>
+              <p class="reason-description">— №5 —</p>
+              <p class="reason-description">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
+        <section class="order-section">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <p class="promo-question">Заинтересовались?</p>
+          <p class="reason-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="hotel-btn" type="button">Поиск гостиницы в седоне</button>
+          <div class="modal-form">
+            <form class="booking-from" action="https://echo.htmlacademy.ru" method="POST">
+              <p>
+                <label for="arrival-date">Дата заезда:</label>
+                <input type="text" id="arrival-date" name="arrival" value="24 апреля 2017" required>
+                <button class="calendar-btn" type="button"></button>
+              </p>
+              <p>
+                <label for="departure-date">Дата выезда:</label>
+                <input type="text" id="departure-date" name="departure" value="4 июля 2017" required>
+                <button class="calendar-btn" type="button"></button>
+              </p>
+              <p class="adults-choise">
+                <label for="adults-numb">Взрослые:</label>
+                <button type="button" class="down-btn">-</button>
+                <input type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
+                <button type="button" class="down-btn">+</button>
+              </p>
+              <p class="child-choise">
+                <label for="child-numb">Дети:</label>
+                <button type="button" class="down-btn">-</button>
+                <input type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
+                <button type="button" class="down-btn">+</button>
+              </p>
+              <button class="book-btn" type="submit">Найти</button>
+            </form>
+          </div>
+        </section>
+        <section class="map-section">
+          <h2 class="visually-hidden">Карта города Седона</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418672.97541540064!2d-112.01608183643887!3d34.9344806781599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sfr!4v1589294022626!5m2!1sru!2sfr" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="contacts">
+          <p>#visitsedona</p>
+          <a href="tel:+7(495)666-01-66">Тел: +7(495) 666-01-66</a>
+        </div>
+        <div class="social">
+          <ul class="social-list">
+            <li class="social-item"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+            <li class="social-item"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li class="social-item"><a href="#"><span class="visually-hidden">Youtube</span></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <span>website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/115x41" width="115" height="41" alt="Логотип htmlacademy"></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
