@@ -8,8 +8,8 @@
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-logo">
-            <svg class="icon" width="138" height="70" alt="Логотип города Седона">
+          <a class="main-logo" href="" aria-label="Логотип сайта города Седона">
+            <svg class="icon" width="138" height="70">
               <use xlink:href="#logo"></use>
             </svg>
           </a>
@@ -46,7 +46,7 @@
             <span class="reason-description">— №1 —</span>
             <span class="reason-description">Седона - не аттракцион для туристов, там течёт своя жизнь</span>
           </div>
-          <img class="reason-image" src="http://placehold.it/800x256" width="800" height="256" alt="Изображение достопримечательностей города Седона">
+          <img class="reason-image" src="img/reason-1.jpg" width="800" height="256" alt="Изображение достопримечательностей города Седона">
         </section>
         <section class="feature-section">
           <ul class="feature-list">
@@ -70,7 +70,7 @@
             <span class="reason-description">— №2 —</span>
             <span class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</span>
           </div>
-          <img class="reason-image" src="http://placehold.it/800x256" width="800" height="256" alt="Изображение достопримечательностей города Седона">
+          <img class="reason-image" src="img/reason-2.jpg" width="800" height="256" alt="Изображение моста дьявола-достопримечательности Седоны">
         </section>
         <section class="other_reasons-section">
           <ul class="advantage-list">
@@ -100,37 +100,37 @@
             <p>
               <label for="arrival-date">Дата заезда:</label>
               <input type="text" id="arrival-date" name="arrival" value="24 апреля 2017" required>
-              <button class="calendar-btn" type="button"></button>
+              <button class="calendar-btn" type="button" aria-label="Выбрать дату заезда"></button>
             </p>
             <p>
               <label for="departure-date">Дата выезда:</label>
               <input type="text" id="departure-date" name="departure" value="4 июля 2017" required>
-              <button class="calendar-btn" type="button"></button>
+              <button class="calendar-btn" type="button" aria-label="Выбрать дату выезда"></button>
             </p>
             <p class="adults-choise">
               <label for="adults-numb">Взрослые:</label>
-              <button type="button" class="down-btn">-</button>
+              <button type="button" class="count-btn" aria-label="Уменьшить количество взрослых">-</button>
               <input type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
-              <button type="button" class="down-btn">+</button>
+              <button type="button" class="count-btn" aria-label="Увеличить количество взрослых">+</button>
             </p>
             <p class="child-choise">
               <label for="child-numb">Дети:</label>
-              <button type="button" class="down-btn">-</button>
+              <button type="button" class="count-btn" aria-label="Уменьшить количество детей">-</button>
               <input type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
-              <button type="button" class="down-btn">+</button>
+              <button type="button" class="count-btn" aria-label="Увеличить количество детей">+</button>
             </p>
             <button class="book-btn" type="submit">Найти</button>
           </form>
         </section>
         <section class="map-section">
           <h2 class="visually-hidden">Карта города Седона</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418672.97541540064!2d-112.01608183643887!3d34.9344806781599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sfr!4v1589294022626!5m2!1sru!2sfr" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418672.97541540064!2d-112.01608183643887!3d34.9344806781599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sfr!4v1589294022626!5m2!1sru!2sfr" width="1200" height="594" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
       </main>
       <footer class="main-footer">
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <p>#visitsedona</p>
+          <p aria-label="Хэштэг в социальных сетях">#visitsedona</p>
           <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
         </section>
         <section class="social">
@@ -144,8 +144,8 @@
         <section class="copyright">
           <h2 class="visually-hidden">Создание сайтов</h2>
           <span>website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <svg class="icon" width="115" height="41" alt="Логотип htmlacademy">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип htmlacademy">
+            <svg class="icon" width="115" height="41">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
