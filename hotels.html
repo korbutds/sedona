@@ -73,8 +73,10 @@
             <fieldset class="hotel-field cost-field">
               <legend>Стоимость в сутки (Р):</legend>
               <div class="filter-text_field">
-                <input type="text" name="min-cost" value="0">
-                <input type="text" name="max-cost" value="3000">
+                <label class="visually-hidden" for="min-price">Минимальная стоимость</label>
+                <input type="text" name="min-cost" id="min-price" value="0">
+                <label class="visually-hidden" for="max-price">Максимальная стоимость</label>
+                <input type="text" name="max-cost" id="max-price" value="3000">
               </div>
               <div class="range-field">
                 <div class="range-scale">
@@ -101,15 +103,15 @@
             </ul>
             <ul class="min_max-list">
               <li class="min_max-item">
-                <a href="#">
-                  <svg class="icon" width="11" height="10" aria-label="Сначала дешевые">
+                <a href="#" aria-label="Сначала дешевые">
+                  <svg class="icon" width="11" height="10">
                     <use xlink:href="#icon-up"></use>
                   </svg>
                 </a>
               </li>
               <li class="min_max-item">
-                <a href="#">
-                  <svg class="icon" width="11" height="10" aria-label="Сначала дорогие">
+                <a href="#" aria-label="Сначала дорогие">
+                  <svg class="icon" width="11" height="10">
                     <use xlink:href="#icon-down"></use>
                   </svg>
                 </a>
