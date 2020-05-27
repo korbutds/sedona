@@ -17,6 +17,7 @@
   --basic-wrap: #3c4b50;
   --basic-academy-logo: #231F20;
   --basic-academy-logo-active: #bdbbbc;
+  --basic-tomato: tomato;
 }
 
 img {
@@ -260,7 +261,7 @@ body {
 }
 
 .booking-form .book-btn:focus {
-  outline-color: tomato;
+  outline-color: var(--basic-tomato);
 }
 
 .booking-form .book-btn:active {
@@ -286,11 +287,18 @@ body {
   list-style: none;
 }
 
+.social-list .social-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .social-list a {
   display: block;
   width: 46px;
   height: 48px;
   margin-bottom: 10px;
+
+  text-align: center;
 
   background-color: var(--basic-sedona-blue);
 }
@@ -301,11 +309,19 @@ body {
 }
 
 .social-list a:focus {
-  outline-color: tomato;
+  outline-color: var(--basic-tomato);
 }
 
 .social-list a:active {
   background-color: var(--basic-sedona-dark);
+}
+
+.social-list svg {
+  color: var(--basic-white);
+}
+
+.social-icon:active svg {
+  opacity: 0.3;
 }
 
 .copyright a {
@@ -317,7 +333,7 @@ body {
 }
 
 .copyright a:focus {
-  outline-color: tomato;
+  outline-color: var(--basic-tomato);
   color: var(--basic-sedona-blue);
 }
 
@@ -350,7 +366,7 @@ body {
 .result-title:focus a {
   color: var(--basic-sedona-blue);
 
-  outline-color: tomato;
+  outline-color: var(--basic-tomato);
 }
 
 .result-title:active a {
@@ -380,7 +396,7 @@ body {
 }
 
 .result-section .detail-btn:focus {
-  outline-color: tomato;
+  outline-color: var(--basic-tomato);
   background-color: var(--basic-sedona-sky);
 }
 
@@ -411,4 +427,35 @@ body {
   color: var(--basic-rating);
 
   background-color: var(--basic-grey);
+}
+
+.result-section .star-section {
+  background-image: url(../img/star.svg);
+  background-size: 19px 17px;
+  background-repeat: space;
+}
+
+.result-section .one-star {
+  width: 20px;
+  height: 18px;
+}
+
+.result-section .two-star {
+  width: 40px;
+  height: 18px;
+}
+
+.result-section .three-star {
+  width: 60px;
+  height: 18px;
+}
+
+.result-section .four-star {
+  width: 80px;
+  height: 18px;
+}
+
+.result-section .five-star {
+  width: 100px;
+  height: 18px;
 }
