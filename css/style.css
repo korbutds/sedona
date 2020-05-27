@@ -49,7 +49,7 @@ a {
   overflow: hidden;
 }
 
-body .wrapper {
+.wrapper {
   width: 1200px;
   margin: 0 auto;
 
@@ -209,7 +209,7 @@ body {
   color: var(--basic-sedona-blue);
 }
 
-.booking-form .count-btn {
+.count-btn {
   position: relative;
 
   border: none;
@@ -231,19 +231,19 @@ body {
   transform: rotate(90deg);
 }
 
-.booking-form .count-btn:hover::after,
-.booking-form .count-btn:hover::before,
-.booking-form .count-btn:focus::after,
-.booking-form .count-btn:focus::before {
+.count-btn:hover::after,
+.count-btn:hover::before,
+.count-btn:focus::after,
+.count-btn:focus::before {
   background-color: var(--basic-black);
 }
 
-.booking-form .count-btn:active::after,
-.booking-form .count-btn:active::before {
+.count-btn:active::after,
+.count-btn:active::before {
   background-color: var(--basic-sedona-blue);
 }
 
-.booking-form .book-btn {
+.book-btn {
   font: inherit;
   font-weight: 700;
   font-size: 21px;
@@ -255,16 +255,16 @@ body {
   background-color: var(--basic-sedona-blue);
 }
 
-.booking-form .book-btn:hover,
-.booking-form .book-btn:focus {
+.book-btn:hover,
+.book-btn:focus {
   background-color: var(--basic-sedona-sky);
 }
 
-.booking-form .book-btn:focus {
+.book-btn:focus {
   outline-color: var(--basic-tomato);
 }
 
-.booking-form .book-btn:active {
+.book-btn:active {
   color: var(--basic-white-opacity);
 
   background-color: var(--basic-sedona-dark);
@@ -272,7 +272,7 @@ body {
 
 /* footer */
 
-.main-footer .contacts {
+.contacts {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -283,11 +283,11 @@ body {
   color: var(--basic-black);
 }
 
-.social .social-list {
+.social-list {
   list-style: none;
 }
 
-.social-list .social-item {
+.social-item {
   display: inline-block;
   vertical-align: middle;
 }
@@ -345,11 +345,11 @@ body {
 
 /* result-section */
 
-.result-section .result-list {
+.result-list {
   list-style: none;
 }
 
-.result-section .result-title {
+.result-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -373,12 +373,12 @@ body {
   color: var(--basic-black-opacity);
 }
 
-.result-section .result-description {
+.result-description {
   line-height: 21px;
   color: var(--basic-dark);
 }
 
-.result-section .result-btn {
+.result-btn {
   display: inline-block;
 
   font-weight: 700;
@@ -387,41 +387,41 @@ body {
   vertical-align: middle;
 }
 
-.result-section .detail-btn {
+.detail-btn {
   background-color: var(--basic-sedona-blue);
 }
 
-.result-section .detail-btn:hover {
+.detail-btn:hover {
   background-color: var(--basic-sedona-sky);
 }
 
-.result-section .detail-btn:focus {
+.detail-btn:focus {
   outline-color: var(--basic-tomato);
   background-color: var(--basic-sedona-sky);
 }
 
-.result-section .detail-btn:active {
+.detail-btn:active {
   color: var(--basic-white-opacity);
 
   background-color: var(--basic-sedona-dark);
 }
 
-.result-section .booking-btn {
+.booking-btn {
   background-color: var(--basic-brown);
 }
 
-.result-section .booking-btn:hover,
-.result-section .booking-btn:focus {
+.booking-btn:hover,
+.booking-btn:focus {
   background-color: var(--basic-brown-hov);
 }
 
-.result-section .booking-btn:active {
+.booking-btn:active {
   color: var(--basic-white-opacity);
 
   background-color: var(--basic-brown-active);
 }
 
-.result-section .user_rate {
+.user_rate {
   display: inline-block;
 
   color: var(--basic-rating);
@@ -429,33 +429,33 @@ body {
   background-color: var(--basic-grey);
 }
 
-.result-section .star-section {
+.star-section {
   background-image: url(../img/star.svg);
   background-size: 19px 17px;
   background-repeat: space;
 }
 
-.result-section .one-star {
+.one-star {
   width: 20px;
   height: 18px;
 }
 
-.result-section .two-star {
+.two-star {
   width: 40px;
   height: 18px;
 }
 
-.result-section .three-star {
+.three-star {
   width: 60px;
   height: 18px;
 }
 
-.result-section .four-star {
+.four-star {
   width: 80px;
   height: 18px;
 }
 
-.result-section .five-star {
+.five-star {
   width: 100px;
   height: 18px;
 }
