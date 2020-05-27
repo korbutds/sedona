@@ -1,0 +1,461 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-sedona-blue: #81b3d2;
+  --basic-sedona-sky: #669EC0;
+  --basic-sedona-dark: #5496BD;
+  --basic-white: #ffffff;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --basic-black-opacity: rgba(0, 0, 0, 0.3);
+  --basic-grey: #f2f2f2;
+  --basic-grey-hov: #ebebeb;
+  --basic-calendar: #a9a9a9;
+  --basic-rating: #666666;
+  --basic-brown: #766357;
+  --basic-brown-hov: #604e43;
+  --basic-brown-active: #503e33;
+  --basic-wrap: #3c4b50;
+  --basic-academy-logo: #231F20;
+  --basic-academy-logo-active: #bdbbbc;
+  --basic-tomato: tomato;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: var(--basic-white);
+}
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-dark);
+
+  background-color: var(--basic-grey);
+}
+
+/* main-navigation */
+
+.main-navigation {
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.site_nav-list {
+  list-style: none;
+}
+
+.site_nav-item a {
+  color: var(--basic-dark);
+}
+
+.site_nav-item .active-page {
+  color: var(--basic-brown);
+}
+
+.site_nav-item a:hover {
+  color: var(--basic-sedona-blue);
+}
+
+.site_nav-item a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* invitation-section */
+
+.invitation-section {
+  height: 509px;
+
+  text-align: center;
+
+  background-color: var(--basic-wrap);
+  background-image: url(../img/shape.svg), url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: 100%, 100% auto;
+}
+
+/* promo-section */
+
+.promo-section {
+  text-align: center;
+}
+
+.promo-title,
+.reason-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+/* order-section */
+
+.order-section {
+  text-align: center;
+}
+
+.promo-question {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/* booking-section */
+
+.booking-section {
+  width: 568px;
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+/* button */
+
+.hotel-btn {
+  width: 100%;
+
+  font: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.hotel-btn:hover,
+.hotel-btn:focus {
+  background-color: var(--basic-brown-hov);
+}
+
+.hotel-btn:active {
+  background-color: var(--basic-brown-active);
+  color: var(--basic-white-opacity);
+}
+
+/* booking-form */
+
+.booking-form label {
+  font-weight: 700;
+}
+
+.booking-form input[type="text"] {
+  font: inherit;
+  font-weight: 700;
+  line-height: 26px;
+
+  background-color: var(--basic-grey);
+  border: none;
+}
+
+.date-selection svg {
+  color: var(--basic-calendar);
+}
+
+.booking-form input[type="text"]:hover {
+  background-color: var(--basic-grey-hov);
+}
+
+.date-input:hover + svg {
+  color: var(--basic-black);
+}
+
+.booking-form input[type="text"]:focus {
+  background-color: var(--basic-white);
+}
+
+.date-input:focus + svg {
+  color: var(--basic-sedona-blue);
+}
+
+.count-btn {
+  position: relative;
+
+  border: none;
+}
+
+.minus-btn::before,
+.plus-btn::before,
+.plus-btn::after {
+  content: "";
+
+  display: block;
+  width: 12px;
+  height: 3px;
+
+  background-color: var(--basic-calendar);
+}
+
+.plus-btn::after {
+  transform: rotate(90deg);
+}
+
+.count-btn:hover::after,
+.count-btn:hover::before,
+.count-btn:focus::after,
+.count-btn:focus::before {
+  background-color: var(--basic-black);
+}
+
+.count-btn:active::after,
+.count-btn:active::before {
+  background-color: var(--basic-sedona-blue);
+}
+
+.book-btn {
+  font: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  border: none;
+  background-color: var(--basic-sedona-blue);
+}
+
+.book-btn:hover,
+.book-btn:focus {
+  background-color: var(--basic-sedona-sky);
+}
+
+.book-btn:focus {
+  outline-color: var(--basic-tomato);
+}
+
+.book-btn:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-sedona-dark);
+}
+
+/* footer */
+
+.contacts {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.contacts a {
+  color: var(--basic-black);
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-list a {
+  display: block;
+  width: 46px;
+  height: 48px;
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  background-color: var(--basic-sedona-blue);
+}
+
+.social-list a:hover,
+.social-list a:focus {
+  background-color: var(--basic-sedona-sky);
+}
+
+.social-list a:focus {
+  outline-color: var(--basic-tomato);
+}
+
+.social-list a:active {
+  background-color: var(--basic-sedona-dark);
+}
+
+.social-list svg {
+  color: var(--basic-white);
+}
+
+.social-icon:active svg {
+  opacity: 0.3;
+}
+
+.copyright a {
+  color: var(--basic-academy-logo);
+}
+
+.copyright a:hover {
+  color: var(--basic-sedona-blue);
+}
+
+.copyright a:focus {
+  outline-color: var(--basic-tomato);
+  color: var(--basic-sedona-blue);
+}
+
+.copyright a:active {
+  color: var(--basic-academy-logo-active);
+}
+
+/* hotels.html */
+
+/* result-section */
+
+.result-list {
+  list-style: none;
+}
+
+.result-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.result-title a {
+  color: var(--basic-black);
+}
+
+.result-title a:hover {
+  color: var(--basic-sedona-blue);
+}
+
+.result-title a:focus {
+  color: var(--basic-sedona-blue);
+
+  outline-color: var(--basic-tomato);
+}
+
+.result-title a:active {
+  color: var(--basic-black-opacity);
+}
+
+.result-description {
+  line-height: 21px;
+  color: var(--basic-dark);
+}
+
+.result-btn {
+  display: inline-block;
+
+  font-weight: 700;
+  line-height: 21px;
+  color: var(--basic-white);
+  vertical-align: middle;
+}
+
+.detail-btn {
+  background-color: var(--basic-sedona-blue);
+}
+
+.detail-btn:hover {
+  background-color: var(--basic-sedona-sky);
+}
+
+.detail-btn:focus {
+  outline-color: var(--basic-tomato);
+  background-color: var(--basic-sedona-sky);
+}
+
+.detail-btn:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-sedona-dark);
+}
+
+.booking-btn {
+  background-color: var(--basic-brown);
+}
+
+.booking-btn:hover,
+.booking-btn:focus {
+  background-color: var(--basic-brown-hov);
+}
+
+.booking-btn:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-brown-active);
+}
+
+.user_rate {
+  display: inline-block;
+
+  color: var(--basic-rating);
+
+  background-color: var(--basic-grey);
+}
+
+.star-section {
+  background-image: url(../img/star.svg);
+  background-size: 19px 17px;
+  background-repeat: space;
+}
+
+.one-star {
+  width: 20px;
+  height: 18px;
+}
+
+.two-star {
+  width: 40px;
+  height: 18px;
+}
+
+.three-star {
+  width: 60px;
+  height: 18px;
+}
+
+.four-star {
+  width: 80px;
+  height: 18px;
+}
+
+.five-star {
+  width: 100px;
+  height: 18px;
+}
