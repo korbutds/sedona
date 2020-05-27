@@ -3,29 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <!--Как убрать лишние шрифты из набора? Расширенные кирилические и т.д.. Или это только с локальными можно проделать?-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-logo" href="" aria-label="Логотип сайта города Седона">
+          <a class="main-logo" aria-label="Логотип сайта города Седона">
             <svg class="icon" width="138" height="70">
               <use xlink:href="#logo"></use>
             </svg>
           </a>
-          <ul class="about_nav-list">
-            <li class="about_nav-item">
+          <ul class="site_nav-list">
+            <li class="site_nav-item">
               <a href="#">Информация</a>
             </li>
-            <li class="about_nav-item">
+            <li class="site_nav-item">
               <a href="#">Фото и видео</a>
             </li>
-          </ul>
-          <ul class="city_nav-list">
-            <li class="city_nav-item">
+            <li class="site_nav-item">
               <a href="#">Карта штата</a>
             </li>
-            <li class="city_nav-item">
+            <li class="site_nav-item">
               <a href="hotels.html">Гостиницы</a>
             </li>
           </ul>
@@ -41,6 +42,7 @@
           <p class="promo-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
         <section class="natural-section main_reason-section">
+          <h2 class="visually-hidden">Первая причина посетить город</h2>
           <div class="reason-container">
             <h3 class="reason-title white-reason">Настоящий городок</h3>
             <span class="reason-description">— №1 —</span>
@@ -49,6 +51,7 @@
           <img class="reason-image" src="img/reason-1.jpg" width="800" height="256" alt="Изображение достопримечательностей города Седона">
         </section>
         <section class="feature-section">
+          <h2 class="visually-hidden">Инфраструктура Седоны</h2>
           <ul class="feature-list">
             <li class="feature-item">
               <h3 class="reason-title">Жильё</h3>
@@ -65,6 +68,7 @@
           </ul>
         </section>
         <section class="bridge-section main_reason-section">
+          <h2 class="visually-hidden">Вторая причина посетить город</h2>
           <div class="reason-container">
             <h3 class="reason-title white-reason">Там есть Мост дьявола</h3>
             <span class="reason-description">— №2 —</span>
@@ -73,6 +77,7 @@
           <img class="reason-image" src="img/reason-2.jpg" width="800" height="256" alt="Изображение моста дьявола-достопримечательности Седоны">
         </section>
         <section class="other_reasons-section">
+          <h2 class="visually-hidden">Отстальные причины посетить город</h2>
           <ul class="advantage-list">
             <li class="advantage-item">
               <h3 class="reason-title">Небольшая площадь</h3>
@@ -95,32 +100,38 @@
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="promo-question">Заинтересовались?</p>
           <p class="reason-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="hotel-btn" type="button">Поиск гостиницы в седоне</button>
-          <form class="booking-from" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label for="arrival-date">Дата заезда:</label>
-              <input type="text" id="arrival-date" name="arrival" value="24 апреля 2017" required>
-              <button class="calendar-btn" type="button" aria-label="Выбрать дату заезда"></button>
-            </p>
-            <p>
-              <label for="departure-date">Дата выезда:</label>
-              <input type="text" id="departure-date" name="departure" value="4 июля 2017" required>
-              <button class="calendar-btn" type="button" aria-label="Выбрать дату выезда"></button>
-            </p>
-            <p class="adults-choise">
-              <label for="adults-numb">Взрослые:</label>
-              <button type="button" class="count-btn" aria-label="Уменьшить количество взрослых">-</button>
-              <input type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
-              <button type="button" class="count-btn" aria-label="Увеличить количество взрослых">+</button>
-            </p>
-            <p class="child-choise">
-              <label for="child-numb">Дети:</label>
-              <button type="button" class="count-btn" aria-label="Уменьшить количество детей">-</button>
-              <input type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
-              <button type="button" class="count-btn" aria-label="Увеличить количество детей">+</button>
-            </p>
-            <button class="book-btn" type="submit">Найти</button>
-          </form>
+          <div class="booking-section">
+            <button class="hotel-btn" type="button">Поиск гостиницы в седоне</button>
+            <form class="booking-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p class="date-selection">
+                <label for="arrival-date">Дата заезда:</label>
+                <input class="date-input" type="text" id="arrival-date" name="arrival" value="24 апреля 2017" required>
+                <svg class="icon" width="21" height="22">
+                  <use xlink:href="#calendar"></use>
+                </svg>
+              </p>
+              <p class="date-selection">
+                <label for="departure-date">Дата выезда:</label>
+                <input class="date-input" type="text" id="departure-date" name="departure" value="4 июля 2017" required>
+                <svg class="icon" width="21" height="22">
+                  <use xlink:href="#calendar"></use>
+                </svg>
+              </p>
+              <p class="adults-choise">
+                <label for="adults-numb">Взрослые:</label>
+                <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество взрослых"></button>
+                <input type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
+                <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество взрослых"></button>
+              </p>
+              <p class="child-choise">
+                <label for="child-numb">Дети:</label>
+                <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество детей"></button>
+                <input type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
+                <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество детей"></button>
+              </p>
+              <button class="book-btn" type="submit">Найти</button>
+            </form>
+          </div>
         </section>
         <section class="map-section">
           <h2 class="visually-hidden">Карта города Седона</h2>

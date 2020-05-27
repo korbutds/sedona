@@ -1,0 +1,414 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-sedona-blue: #81b3d2;
+  --basic-sedona-sky: #669EC0;
+  --basic-sedona-dark: #5496BD;
+  --basic-white: #ffffff;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --basic-black-opacity: rgba(0, 0, 0, 0.3);
+  --basic-grey: #f2f2f2;
+  --basic-grey-hov: #ebebeb;
+  --basic-calendar: #a9a9a9;
+  --basic-rating: #666666;
+  --basic-brown: #766357;
+  --basic-brown-hov: #604e43;
+  --basic-brown-active: #503e33;
+  --basic-wrap: #3c4b50;
+  --basic-academy-logo: #231F20;
+  --basic-academy-logo-active: #bdbbbc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: var(--basic-white);
+}
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-dark);
+
+  background-color: var(--basic-grey);
+}
+
+/* main-navigation */
+
+.main-navigation {
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.site_nav-list {
+  list-style: none;
+}
+
+.site_nav-item a {
+  color: var(--basic-dark);
+}
+
+.site_nav-item .active-page {
+  color: var(--basic-brown);
+}
+
+.site_nav-item a:hover {
+  color: var(--basic-sedona-blue);
+}
+
+.site_nav-item a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* invitation-section */
+
+.invitation-section {
+  height: 509px;
+
+  text-align: center;
+
+  background-color: var(--basic-wrap);
+  background-image: url(../img/shape.svg), url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: 100%, 100% auto;
+}
+
+/* promo-section */
+
+.promo-section {
+  text-align: center;
+}
+
+.promo-title,
+.reason-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+/* order-section */
+
+.order-section {
+  text-align: center;
+}
+
+.promo-question {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/* booking-section */
+
+.booking-section {
+  width: 568px;
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+/* button */
+
+.hotel-btn {
+  width: 100%;
+
+  font: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.hotel-btn:hover,
+.hotel-btn:focus {
+  background-color: var(--basic-brown-hov);
+}
+
+.hotel-btn:active {
+  background-color: var(--basic-brown-active);
+  color: var(--basic-white-opacity);
+}
+
+/* booking-form */
+
+.booking-form label {
+  font-weight: 700;
+}
+
+.booking-form input[type="text"] {
+  font: inherit;
+  font-weight: 700;
+  line-height: 26px;
+
+  background-color: var(--basic-grey);
+  border: none;
+}
+
+.date-selection svg {
+  color: var(--basic-calendar);
+}
+
+.booking-form input[type="text"]:hover {
+  background-color: var(--basic-grey-hov);
+}
+
+.date-input:hover + svg {
+  color: var(--basic-black);
+}
+
+.booking-form input[type="text"]:focus {
+  background-color: var(--basic-white);
+}
+
+.date-input:focus + svg {
+  color: var(--basic-sedona-blue);
+}
+
+.booking-form .count-btn {
+  position: relative;
+
+  border: none;
+}
+
+.minus-btn::before,
+.plus-btn::before,
+.plus-btn::after {
+  content: "";
+
+  display: block;
+  width: 12px;
+  height: 3px;
+
+  background-color: var(--basic-calendar);
+}
+
+.plus-btn::after {
+  transform: rotate(90deg);
+}
+
+.booking-form .count-btn:hover::after,
+.booking-form .count-btn:hover::before,
+.booking-form .count-btn:focus::after,
+.booking-form .count-btn:focus::before {
+  background-color: var(--basic-black);
+}
+
+.booking-form .count-btn:active::after,
+.booking-form .count-btn:active::before {
+  background-color: var(--basic-sedona-blue);
+}
+
+.booking-form .book-btn {
+  font: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  border: none;
+  background-color: var(--basic-sedona-blue);
+}
+
+.booking-form .book-btn:hover,
+.booking-form .book-btn:focus {
+  background-color: var(--basic-sedona-sky);
+}
+
+.booking-form .book-btn:focus {
+  outline-color: tomato;
+}
+
+.booking-form .book-btn:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-sedona-dark);
+}
+
+/* footer */
+
+.main-footer .contacts {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.contacts a {
+  color: var(--basic-black);
+}
+
+.social .social-list {
+  list-style: none;
+}
+
+.social-list a {
+  display: block;
+  width: 46px;
+  height: 48px;
+  margin-bottom: 10px;
+
+  background-color: var(--basic-sedona-blue);
+}
+
+.social-list a:hover,
+.social-list a:focus {
+  background-color: var(--basic-sedona-sky);
+}
+
+.social-list a:focus {
+  outline-color: tomato;
+}
+
+.social-list a:active {
+  background-color: var(--basic-sedona-dark);
+}
+
+.copyright a {
+  color: var(--basic-academy-logo);
+}
+
+.copyright a:hover {
+  color: var(--basic-sedona-blue);
+}
+
+.copyright a:focus {
+  outline-color: tomato;
+  color: var(--basic-sedona-blue);
+}
+
+.copyright a:active {
+  color: var(--basic-academy-logo-active);
+}
+
+/* hotels.html */
+
+/* result-section */
+
+.result-section .result-list {
+  list-style: none;
+}
+
+.result-section .result-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.result-title a {
+  color: var(--basic-black);
+}
+
+.result-title:hover a {
+  color: var(--basic-sedona-blue);
+}
+
+.result-title:focus a {
+  color: var(--basic-sedona-blue);
+
+  outline-color: tomato;
+}
+
+.result-title:active a {
+  color: var(--basic-black-opacity);
+}
+
+.result-section .result-description {
+  line-height: 21px;
+  color: var(--basic-dark);
+}
+
+.result-section .result-btn {
+  display: inline-block;
+
+  font-weight: 700;
+  line-height: 21px;
+  color: var(--basic-white);
+  vertical-align: middle;
+}
+
+.result-section .detail-btn {
+  background-color: var(--basic-sedona-blue);
+}
+
+.result-section .detail-btn:hover {
+  background-color: var(--basic-sedona-sky);
+}
+
+.result-section .detail-btn:focus {
+  outline-color: tomato;
+  background-color: var(--basic-sedona-sky);
+}
+
+.result-section .detail-btn:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-sedona-dark);
+}
+
+.result-section .booking-btn {
+  background-color: var(--basic-brown);
+}
+
+.result-section .booking-btn:hover,
+.result-section .booking-btn:focus {
+  background-color: var(--basic-brown-hov);
+}
+
+.result-section .booking-btn:active {
+  color: var(--basic-white-opacity);
+
+  background-color: var(--basic-brown-active);
+}
+
+.result-section .user_rate {
+  display: inline-block;
+
+  color: var(--basic-rating);
+
+  background-color: var(--basic-grey);
+}
