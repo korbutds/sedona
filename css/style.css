@@ -359,17 +359,17 @@ body {
   color: var(--basic-black);
 }
 
-.result-title:hover a {
+.result-title a:hover {
   color: var(--basic-sedona-blue);
 }
 
-.result-title:focus a {
+.result-title a:focus {
   color: var(--basic-sedona-blue);
 
   outline-color: var(--basic-tomato);
 }
 
-.result-title:active a {
+.result-title a:active {
   color: var(--basic-black-opacity);
 }
 
