@@ -80,14 +80,7 @@ body {
   color: var(--basic-black);
 }
 
-.site_nav-list,
-.feature-list,
-.advantage-list,
-.sorter-list,
-.social-list,
-.result-list,
-.min_max-list,
-.infrastructure-list {
+.clear-list {
   list-style: none;
 }
 
