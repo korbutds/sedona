@@ -15,7 +15,7 @@
               <use xlink:href="#logo"></use>
             </svg>
           </a>
-          <ul class="site_nav-list">
+          <ul class="site_nav-list clear-list">
             <li class="site_nav-item">
               <a href="#">Информация</a>
             </li>
@@ -38,7 +38,7 @@
           <form class="hotel-form" action="https://echo.htmlacademy.ru/" method="POST">
             <fieldset class="hotel-field infrastructure-field">
               <legend>Инфраструктура:</legend>
-              <ul class="infrastructure-list">
+              <ul class="infrastructure-list clear-list">
                 <li class="infrastructure-item">
                   <input type="checkbox" class="visually-hidden" name="infrastructure" id="pool" value="pool" checked>
                   <label class="fildset-label" for="pool">Бассейн</label>
@@ -55,7 +55,7 @@
             </fieldset>
             <fieldset class="hotel-field stay_type-field">
               <legend>Тип жилья:</legend>
-              <ul class="infrastructure-list">
+              <ul class="infrastructure-list clear-list">
                 <li class="infrastructure-item">
                   <input type="checkbox" class="visually-hidden" name="stay-type" id="hotel" value="hotel" checked>
                   <label class="fildset-label" for="hotel">Гостиница</label>
@@ -96,21 +96,21 @@
           <p class="found-amount">Найдено: 3</p>
           <div class="sorter-part">
             <p>Сортировка:</p>
-            <ul class="sorter-list">
+            <ul class="sorter-list clear-list">
               <li class="sorter-item"><a href="#">По цене</a></li>
               <li class="sorter-item"><a href="#">По типу</a></li>
               <li class="sorter-item"><a href="#">По рейтингу</a></li>
             </ul>
-            <ul class="min_max-list">
+            <ul class="min_max-list clear-list">
               <li class="min_max-item">
-                <a href="#" aria-label="Сначала дешевые">
+                <a class="min_max-link" href="#" aria-label="Сначала дешевые">
                   <svg class="icon" width="11" height="10">
                     <use xlink:href="#icon-up"></use>
                   </svg>
                 </a>
               </li>
               <li class="min_max-item">
-                <a href="#" aria-label="Сначала дорогие">
+                <a class="min_max-link" href="#" aria-label="Сначала дорогие">
                   <svg class="icon" width="11" height="10">
                     <use xlink:href="#icon-down"></use>
                   </svg>
@@ -121,7 +121,7 @@
         </section>
         <section class="result-section">
           <h2 class="visually-hidden">Результаты поиска</h2>
-          <ul class="result-list">
+          <ul class="result-list clear-list">
             <li class="result-item">
               <img src="img/amararesort.jpg" width="135" height="90" alt="Изображение отеля Amara Resort & Spa">
               <div class="hotel-info">
@@ -181,7 +181,7 @@
         </section>
         <section class="social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="social-list">
+          <ul class="social-list clear-list">
             <li class="social-item">
               <a class="social-icon" href="#">
                 <span class="visually-hidden">Twitter</span>
@@ -254,6 +254,12 @@
       </symbol>
       <symbol viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="facebook">
         <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="currentColor"></path>
+      </symbol>
+      <symbol viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-down">
+        <path d="M5.5 10L11 0H0l5.5 10z" fill="currentColor"></path>
+      </symbol>
+      <symbol viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-up">
+        <path d="M5.5 0L0 10h11L5.5 0z" fill="currentColor"></path>
       </symbol>
     </svg>
   </body>
