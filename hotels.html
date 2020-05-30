@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body hotels-page">
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-navigation">
@@ -101,16 +101,16 @@
               <li class="sorter-item"><a href="#">По типу</a></li>
               <li class="sorter-item"><a href="#">По рейтингу</a></li>
             </ul>
-            <ul class="min_max-list clear-list">
-              <li class="min_max-item">
-                <a class="min_max-link" href="#" aria-label="Сначала дешевые">
+            <ul class="sort_arrow-list clear-list">
+              <li class="sort_arrow-item">
+                <a class="sort_arrow-link" href="#" aria-label="Сначала дешевые">
                   <svg class="icon" width="11" height="10">
                     <use xlink:href="#icon-up"></use>
                   </svg>
                 </a>
               </li>
-              <li class="min_max-item">
-                <a class="min_max-link" href="#" aria-label="Сначала дорогие">
+              <li class="sort_arrow-item">
+                <a class="sort_arrow-link" href="#" aria-label="Сначала дорогие">
                   <svg class="icon" width="11" height="10">
                     <use xlink:href="#icon-down"></use>
                   </svg>
@@ -130,8 +130,10 @@
                   <span>Гостиница</span>
                   <span>от 4000</span>
                 </div>
-                <a class="detail-btn result-btn" href="#">Подробнее</a>
-                <a class="booking-btn result-btn" href="#">Забронировать</a>
+                <div class="btn-section">
+                  <a class="detail-btn result-btn" href="#">Подробнее</a>
+                  <a class="booking-btn result-btn" href="#">Забронировать</a>
+                </div>
               </div>
               <div class="hotel_rate-section">
                 <p class="star-section four-star"><span class="visually-hidden">4 звезды</span></p>
@@ -146,8 +148,10 @@
                   <span>Мотель</span>
                   <span>от 3000</span>
                 </div>
-                <a class="detail-btn result-btn" href="#">Подробнее</a>
-                <a class="booking-btn result-btn" href="#">Забронировать</a>
+                <div class="btn-section">
+                  <a class="detail-btn result-btn" href="#">Подробнее</a>
+                  <a class="booking-btn result-btn" href="#">Забронировать</a>
+                </div>
               </div>
               <div class="hotel_rate-section">
                 <p class="star-section three-star"><span class="visually-hidden">3 звезды</span></p>
@@ -162,8 +166,10 @@
                   <span>Апартаменты</span>
                   <span>от 2000</span>
                 </div>
-                <a class="detail-btn result-btn" href="#">Подробнее</a>
-                <a class="booking-btn result-btn" href="#">Забронировать</a>
+                <div class="btn-section">
+                  <a class="detail-btn result-btn" href="#">Подробнее</a>
+                  <a class="booking-btn result-btn" href="#">Забронировать</a>
+                </div>
               </div>
               <div class="hotel_rate-section">
                 <p class="star-section two-star"><span class="visually-hidden">2 звезды</span></p>

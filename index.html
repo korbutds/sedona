@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-navigation">
@@ -44,7 +44,7 @@
         <section class="natural-section main_reason-section">
           <h2 class="visually-hidden">Первая причина посетить город</h2>
           <div class="reason-container">
-            <h3 class="reason-title white-reason">Настоящий городок</h3>
+            <h3 class="reason-title white-reason">Настоящий<br>городок</h3>
             <span class="reason-description">— №1 —</span>
             <span class="reason-description">Седона - не аттракцион для туристов, там течёт своя жизнь</span>
           </div>
@@ -117,18 +117,20 @@
                   <use xlink:href="#calendar"></use>
                 </svg>
               </p>
-              <p class="adults-choise">
-                <label for="adults-numb">Взрослые:</label>
-                <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество взрослых"></button>
-                <input type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
-                <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество взрослых"></button>
-              </p>
-              <p class="child-choise">
-                <label for="child-numb">Дети:</label>
-                <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество детей"></button>
-                <input type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
-                <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество детей"></button>
-              </p>
+              <div class="people-count">
+                <p class="adults-choise">
+                  <label for="adults-numb">Взрослые:</label>
+                  <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество взрослых"></button>
+                  <input type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
+                  <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество взрослых"></button>
+                </p>
+                <p class="child-choise">
+                  <label for="child-numb">Дети:</label>
+                  <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество детей"></button>
+                  <input type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
+                  <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество детей"></button>
+                </p>
+              </div>
               <button class="book-btn" type="submit">Найти</button>
             </form>
           </div>
