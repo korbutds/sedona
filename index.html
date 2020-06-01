@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body">
+  <body class="page-body index-page">
     <div class="wrapper">
       <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
           <a class="main-logo" aria-label="Логотип сайта города Седона">
             <svg class="icon" width="138" height="70">
               <use xlink:href="#logo"></use>
@@ -104,14 +104,14 @@
             <button class="hotel-btn" type="button">Поиск гостиницы в седоне</button>
             <form class="booking-form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="date-selection">
-                <label for="arrival-date">Дата заезда:</label>
+                <label class="book-label" for="arrival-date">Дата заезда:</label>
                 <input class="date-input" type="text" id="arrival-date" name="arrival" value="24 апреля 2017" required>
                 <svg class="icon" width="21" height="22">
                   <use xlink:href="#calendar"></use>
                 </svg>
               </p>
               <p class="date-selection">
-                <label for="departure-date">Дата выезда:</label>
+                <label class="book-label" for="departure-date">Дата выезда:</label>
                 <input class="date-input" type="text" id="departure-date" name="departure" value="4 июля 2017" required>
                 <svg class="icon" width="21" height="22">
                   <use xlink:href="#calendar"></use>
@@ -119,15 +119,15 @@
               </p>
               <div class="people-count">
                 <p class="adults-choise">
-                  <label for="adults-numb">Взрослые:</label>
+                  <label class="book-label" for="adults-numb">Взрослые:</label>
                   <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество взрослых"></button>
-                  <input type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
+                  <input class="people-input" type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
                   <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество взрослых"></button>
                 </p>
                 <p class="child-choise">
-                  <label for="child-numb">Дети:</label>
+                  <label class="book-label" for="child-numb">Дети:</label>
                   <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество детей"></button>
-                  <input type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
+                  <input class="people-input" type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
                   <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество детей"></button>
                 </p>
               </div>
