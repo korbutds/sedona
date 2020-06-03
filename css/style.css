@@ -637,7 +637,13 @@ body {
 }
 
 .fildset-label {
+  display: block;
   padding-left: 38px;
+
+  background-image: url(../img/checkbox-off.svg);
+  background-size: 23px 23px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
 }
 
 .hotel-field {
@@ -654,6 +660,11 @@ body {
 
 .infrastructure-item {
   margin-bottom: 25px;
+}
+
+.infrastructure-check:checked ~ .fildset-label {
+  background-image: url(../img/checkbox-on.svg);
+  background-size: 27px 23px;
 }
 
 .stay_type-field {
