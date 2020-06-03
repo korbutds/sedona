@@ -638,6 +638,8 @@ body {
 
 .fildset-label {
   display: block;
+  padding-top: 4px;
+  padding-bottom: 3px;
   padding-left: 38px;
 
   background-image: url(../img/checkbox-off.svg);
@@ -659,12 +661,17 @@ body {
 }
 
 .infrastructure-item {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .infrastructure-check:checked ~ .fildset-label {
   background-image: url(../img/checkbox-on.svg);
   background-size: 27px 23px;
+}
+
+.infrastructure-check:focus ~ .fildset-label {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
 }
 
 .stay_type-field {
