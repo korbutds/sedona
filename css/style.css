@@ -120,14 +120,12 @@ body {
 
 .main-logo {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: 50%;
   top: 0;
   width: 138px;
   height: 70px;
-  margin-left: auto;
-  margin-right: auto;
+
+  transform: translateX(-50%);
 }
 
 .site_nav-list {
@@ -153,6 +151,8 @@ body {
 .site_nav-link {
   display: inline-block;
   padding: 15px 0;
+  vertical-align: middle;
+
   color: var(--basic-dark);
 }
 
@@ -369,7 +369,7 @@ body {
   font-weight: 700;
 }
 
-.booking-form input[type="text"] {
+.booking-form .booking-field {
   padding: 6px;
   padding-left: 12px;
 
@@ -393,7 +393,7 @@ body {
   color: var(--basic-calendar);
 }
 
-.booking-form input[type="text"]:hover {
+.booking-form .booking-field:hover {
   background-color: var(--basic-grey-hov);
 }
 
@@ -401,7 +401,7 @@ body {
   color: var(--basic-black);
 }
 
-.booking-form input[type="text"]:focus {
+.booking-form .booking-field:focus {
   background-color: var(--basic-white);
 }
 
@@ -460,20 +460,20 @@ body {
   content: "";
 
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
 
   margin: auto;
   width: 12px;
   height: 3px;
 
   background-color: var(--basic-calendar);
+
+  transform: translate(-50%, -50%);
 }
 
 .plus-btn::after {
-  transform: rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .count-btn:hover::after,
@@ -559,9 +559,14 @@ body {
   justify-self: center;
 }
 
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .social-item {
-  display: inline-block;
-  vertical-align: middle;
+  margin-right: 6px;
+  margin-bottom: 6px;
 }
 
 .social-list a {
@@ -714,7 +719,7 @@ body {
   padding-left: 52px;
 }
 
-.filter-section input[type="number"] {
+.filter-section .filter-field {
   width: 70px;
 
   font: inherit;
@@ -767,7 +772,7 @@ body {
   transform: scale(1.2);
 }
 
-.filter-section button[type="submit"] {
+.filter-section .filter-btn {
   display: block;
   margin: 0 auto;
   padding: 5px 36px 6px;
@@ -783,7 +788,7 @@ body {
   border-radius: 2px;
 }
 
-.filter-section button[type="submit"]:hover {
+.filter-section button:hover {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
