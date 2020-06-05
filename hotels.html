@@ -74,20 +74,20 @@
               <legend class="form-legend cost-legend">Стоимость в сутки (Р):</legend>
               <div class="filter-text_field">
                 <label class="price-label" for="min-price">От</label>
-                <input type="text" name="min-cost" id="min-price" value="0">
+                <input class="filter-field" type="number" name="min-cost" id="min-price" value="0" step="50">
                 <label class="price-label" for="max-price">До</label>
-                <input type="text" name="max-cost" id="max-price" value="3000">
+                <input class="filter-field" type="number" name="max-cost" id="max-price" value="3000" step="50">
               </div>
               <div class="range-field">
                 <div class="range-scale">
                   <div class="range-bar"></div>
                 </div>
                 <div class="range_toggle-section">
-                  <div class="range_toggle-min price-toggle"></div>
-                  <div class="range_toogle-max price-toggle"></div>
+                  <div class="range_toggle-min price-toggle" tabindex="0"></div>
+                  <div class="range_toggle-max price-toggle" tabindex="0"></div>
                 </div>
               </div>
-              <button type="submit">Показать</button>
+              <button class="filter-btn" type="submit">Показать</button>
             </fieldset>
           </form>
         </section>

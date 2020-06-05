@@ -105,14 +105,14 @@
             <form class="booking-form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="date-selection">
                 <label class="book-label" for="arrival-date">Дата заезда:</label>
-                <input class="date-input" type="text" id="arrival-date" name="arrival" value="24 апреля 2017" required>
+                <input class="date-input booking-field" type="text" id="arrival-date" name="arrival" value="24 апреля 2017" required>
                 <svg class="icon" width="21" height="22">
                   <use xlink:href="#calendar"></use>
                 </svg>
               </p>
               <p class="date-selection">
                 <label class="book-label" for="departure-date">Дата выезда:</label>
-                <input class="date-input" type="text" id="departure-date" name="departure" value="4 июля 2017" required>
+                <input class="date-input booking-field" type="text" id="departure-date" name="departure" value="4 июля 2017" required>
                 <svg class="icon" width="21" height="22">
                   <use xlink:href="#calendar"></use>
                 </svg>
@@ -121,13 +121,13 @@
                 <p class="adults-choise">
                   <label class="book-label" for="adults-numb">Взрослые:</label>
                   <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество взрослых"></button>
-                  <input class="people-input" type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
+                  <input class="people-input booking-field" type="text" pattern="[1-9]{1}" id="adults-numb" name="adults" value="2" required>
                   <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество взрослых"></button>
                 </p>
                 <p class="child-choise">
                   <label class="book-label" for="child-numb">Дети:</label>
                   <button type="button" class="count-btn minus-btn" aria-label="Уменьшить количество детей"></button>
-                  <input class="people-input" type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
+                  <input class="people-input booking-field" type="text" pattern="[0-9]{1}" id="child-numb" name="child" value="0">
                   <button type="button" class="count-btn plus-btn" aria-label="Увеличить количество детей"></button>
                 </p>
               </div>
