@@ -174,7 +174,8 @@ body {
 /* invitation-section */
 
 .invitation-section {
-  padding: 76px;
+  padding: 75px;
+  padding-top: 77px;
 
   text-align: center;
 
@@ -188,7 +189,7 @@ body {
 /* promo-section */
 
 .promo-section {
-  padding: 42px 340px 51px;
+  padding: 42px 340px 54px;
 
   text-align: center;
 }
@@ -202,7 +203,7 @@ body {
 }
 
 .promo-title {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 
 .promo-description {
@@ -238,17 +239,25 @@ body {
 }
 
 .reason-container {
-  padding: 50px;
-  padding-bottom: 10px;
+  padding: 47px 48px 10px;
   text-align: center;
 }
 
 .reason-title {
-  padding-bottom: 25px;
+  margin-bottom: 27px;
+  padding: 0 72px;
+
+  line-height: 21px;
+}
+
+.reason-description {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .feature-item {
-  padding-top: 160px;
+  padding-top: 159px;
   min-height: 330px;
 }
 
@@ -285,12 +294,13 @@ body {
 /* order-section */
 
 .order-section {
-  padding-top: 57px;
+  padding-top: 65px;
   text-align: center;
 }
 
 .promo-question {
-  margin-bottom: 23px;
+  margin: 0;
+  margin-bottom: 33px;
 
   font-weight: 700;
   font-size: 30px;
@@ -298,10 +308,11 @@ body {
   color: var(--basic-black);
 }
 
-.reason-description {
-  display: block;
+.order-description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
+
+  line-height: 24px;
 }
 
 /* booking-section */
@@ -362,7 +373,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .book-label {
@@ -376,6 +387,7 @@ body {
   font: inherit;
   font-weight: 700;
   line-height: 26px;
+  text-transform: uppercase;
 
   background-color: var(--basic-grey);
   border: none;
@@ -525,9 +537,10 @@ body {
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 36px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   padding-right: 100px;
-  padding-left: 130px;
+  padding-left: 132px;
 }
 
 .index-page .main-footer {
@@ -541,6 +554,8 @@ body {
 
 .contacts {
   justify-self: start;
+  padding-bottom: 21px;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -549,14 +564,19 @@ body {
 
 .contacts p {
   margin: 0;
+  margin-bottom: 9px;
 }
 
 .contacts a {
+margin-bottom: 0;
+
   color: var(--basic-black);
 }
 
 .social {
   justify-self: center;
+  align-self: center;
+  padding-right: 28px;
 }
 
 .social-list {
@@ -643,7 +663,7 @@ body {
 .hotel-form {
   display: flex;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .form-legend {
@@ -657,9 +677,9 @@ body {
 
 .fildset-label {
   display: block;
-  padding-top: 4px;
+  padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 38px;
+  padding-left: 40px;
 
   background-image: url(../img/checkbox-off.svg);
   background-size: 23px 23px;
@@ -676,11 +696,11 @@ body {
 
 .infrastructure-field {
   flex-basis: 150px;
-  margin-right: 104px;
+  margin-right: 105px;
 }
 
 .infrastructure-item {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .infrastructure-check:checked ~ .fildset-label {
@@ -703,16 +723,35 @@ body {
 }
 
 .cost-legend {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .filter-text_field {
+  position: relative;
+
   padding: 5px;
-  padding-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 7px;
+  padding-left: 13px;
   margin-bottom: 20px;
 
   border: solid 2px var(--basic-white);
   border-radius: 2px;
+}
+
+.filter-text_field::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background-color: var(--basic-white);
+
+  transform: translate(-50%, -50%);
 }
 
 .price-label {
@@ -721,6 +760,7 @@ body {
 
 .filter-section .filter-field {
   width: 70px;
+  padding: 0;
 
   font: inherit;
   color: var(--basic-white);
@@ -743,7 +783,7 @@ body {
 }
 
 .range-bar {
-  width: 40%;
+  width: 80%;
   height: 2px;
 
   background-color: var(--basic-white);
@@ -765,7 +805,7 @@ body {
 }
 
 .range_toggle-max {
-  left: 40%;
+  left: 80%;
 }
 
 .price-toggle:hover {
@@ -774,8 +814,8 @@ body {
 
 .filter-section .filter-btn {
   display: block;
-  margin: 0 auto;
-  padding: 5px 36px 6px;
+  margin-left: 85px;
+  padding: 5px 34px 6px;
 
   font: inherit;
   font-size: 14px;
@@ -798,8 +838,8 @@ body {
 
 .sorter-section {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 }
 
 .found-amount {
@@ -854,6 +894,8 @@ body {
 .sort_arrow-list {
   display: flex;
   margin-left: auto;
+
+  font-size: 24px;
 }
 
 .sort_arrow-item {
@@ -886,8 +928,8 @@ body {
   width: 260px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
-  column-gap: 6px;
-  align-items: center;
+  column-gap: 5px;
+  align-items: start;
 }
 
 .apartment-title {
@@ -923,6 +965,10 @@ body {
 
 .apartment-title {
   width: 100%;
+  margin-top: -5px;
+  margin-bottom: 10px;
+
+  line-height: 21px;
 }
 
 .apartment-title a {
@@ -949,11 +995,12 @@ body {
 
 .result-btn {
   display: block;
+  align-self: end;
 
   font-weight: 700;
   color: var(--basic-white);
   text-align: center;
-  padding: 3px 16px;
+  padding: 3px 17px 3px 18px;
 }
 
 .detail-btn {
