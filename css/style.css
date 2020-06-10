@@ -382,6 +382,7 @@ body {
 
 .booking-form .booking-field {
   padding: 6px;
+  padding-right: 9px;
   padding-left: 12px;
 
   font: inherit;
@@ -464,6 +465,7 @@ body {
   align-self: stretch;
 
   border: none;
+  background-color: var(--basic-grey);
 }
 
 .minus-btn::before,
