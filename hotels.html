@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body hotels-page">
     <div class="wrapper">
@@ -74,9 +75,9 @@
               <legend class="form-legend cost-legend">Стоимость в сутки (Р):</legend>
               <div class="filter-text_field">
                 <label class="price-label" for="min-price">От</label>
-                <input class="filter-field" type="text" pattern="[0-9]" name="min-cost" id="min-price" value="0" step="50">
+                <input class="filter-field" type="text" pattern="[0-9]" name="min-cost" id="min-price" value="0" title="Введите минимальную стоимость">
                 <label class="price-label" for="max-price">До</label>
-                <input class="filter-field" type="text" pattern="[0-9]" name="max-cost" id="max-price" value="3000" step="50">
+                <input class="filter-field" type="text" pattern="[0-9]" name="max-cost" id="max-price" value="3000" title="Введите максимальную стоимость">
               </div>
               <div class="range-field">
                 <div class="range-scale">
