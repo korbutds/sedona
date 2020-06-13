@@ -286,6 +286,11 @@ body {
 
 /* other-reasons-section */
 
+.other_reasons-section {
+  position: relative;
+  z-index: 2;
+}
+
 .advantage-list {
   background-color: var(--basic-grey-bg);
   min-height: 256px;
@@ -294,8 +299,9 @@ body {
 /* order-section */
 
 .order-section {
-  padding-top: 65px;
-  text-align: center;
+  position: relative;
+  z-index: 1;
+
 }
 
 .promo-question {
@@ -316,20 +322,30 @@ body {
 }
 
 /* booking-section */
-
+/*
 .booking-section {
   position: relative;
 
   width: 568px;
   margin: 0 auto;
 
-  text-align: left;
-}
+  text-align: left; */
+/* } */
 
+.index-wrapper {
+  position: relative;
+  z-index: 1;
+
+  padding-top: 65px;
+
+  text-align: center;
+
+  background-color: var(--basic-white);
+}
 /* button */
 
 .hotel-btn {
-  width: 100%;
+  width: 568px;
   padding: 30px;
 
   font: inherit;
@@ -357,13 +373,25 @@ body {
 
 .booking-form {
   position: absolute;
-  bottom: 0;
+  bottom: 400px;
+  left: 50%;
+  z-index: 0;
 
   padding: 55px;
 
+  transform: translate(-50%, 100%);
   background-color: var(--basic-white);
 
-  transform: translateY(100%);
+}
+
+.form-open {
+  bottom: 0;
+  transition: bottom 1s;
+}
+
+.form-close {
+  bottom: 400px;
+  transition: bottom 1s;
 }
 
 .date-selection {
