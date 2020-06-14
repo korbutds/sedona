@@ -1,5 +1,5 @@
 var formButton = document.querySelector('.hotel-btn');
-var bookingForm = document.querySelector('form');
+var bookingForm = document.querySelector('.booking-form');
 
   bookingForm.classList.remove('form-open');
   bookingForm.classList.add('form-close');
