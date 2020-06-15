@@ -13,6 +13,7 @@
   --basic-grey-bg: #eeeeee;
   --basic-grey-hov: #ebebeb;
   --basic-grey-border: #e5e5e5;
+  --basic-grey-disabled: #6a6a6a;
   --basic-calendar: #a9a9a9;
   --basic-sorter: #cacaca;
   --basic-rating: #666666;
@@ -265,23 +266,21 @@ body {
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: left 50% bottom 198px;
-
+  background-position: left 50% top 60px;
 }
 
 .feature-item:nth-child(2) {
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   background-size: 75px auto;
-  background-position: left 50% bottom 198px;
-
+  background-position: left 50% top 62px;
 }
 
 .feature-item:last-child {
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
   background-size: 64px auto;
-  background-position: left 50% bottom 198px;
+  background-position: left 50% top 55px;
 }
 
 /* other-reasons-section */
@@ -301,7 +300,6 @@ body {
 .order-section {
   position: relative;
   z-index: 1;
-
 }
 
 .promo-question {
@@ -320,17 +318,6 @@ body {
 
   line-height: 24px;
 }
-
-/* booking-section */
-/*
-.booking-section {
-  position: relative;
-
-  width: 568px;
-  margin: 0 auto;
-
-  text-align: left; */
-/* } */
 
 .index-wrapper {
   position: relative;
@@ -690,7 +677,7 @@ margin-bottom: 0;
 
   background-color: var(--basic-sedona-blue);
   background-image: url(../img/background-blur.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -721,6 +708,11 @@ margin-bottom: 0;
   background-repeat: no-repeat;
 }
 
+.infrastructure-check:disabled ~ .fildset-label {
+  color: var(--basic-grey-disabled);
+  background-image: url(../img/checkbox-off-dis.svg);
+}
+
 .hotel-field {
   margin: 0;
   padding: 0;
@@ -739,6 +731,11 @@ margin-bottom: 0;
 
 .infrastructure-check:checked ~ .fildset-label {
   background-image: url(../img/checkbox-on.svg);
+  background-size: 27px 23px;
+}
+
+.infrastructure-check:disabled:checked ~ .fildset-label {
+  background-image: url(../img/checkbox-on-dis.svg);
   background-size: 27px 23px;
 }
 
@@ -898,6 +895,7 @@ margin-bottom: 0;
 
 .sorter-list {
   display: flex;
+  flex-basis: 700px;
   flex-wrap: wrap;
 }
 
