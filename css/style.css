@@ -79,8 +79,6 @@ a {
 
 body {
   min-width: 1280px;
-  margin: 0;
-  padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -314,7 +312,7 @@ body {
 
 .order-description {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 43px;
 
   line-height: 24px;
 }
@@ -323,7 +321,7 @@ body {
   position: relative;
   z-index: 1;
 
-  padding-top: 65px;
+  padding-top: 57px;
 
   text-align: center;
 
@@ -411,6 +409,11 @@ body {
 
 .date-input {
   width: 346px;
+}
+
+.date-input::placeholder {
+  font: inherit;
+  color: var(--basic-black);
 }
 
 .date-selection svg {
@@ -557,11 +560,13 @@ body {
 
 .main-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-right: 100px;
-  padding-left: 132px;
+  grid-template-columns: 250px 1fr 202px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 138px;
+  padding-left: 125px;
+
+  text-align: center;
 }
 
 .index-page .main-footer {
@@ -645,6 +650,7 @@ margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-self: end;
+  padding-bottom: 3px;
 }
 
 .copyright span {
