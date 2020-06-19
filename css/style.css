@@ -447,19 +447,19 @@ body {
   margin-bottom: 54px;
 }
 
-.adults-choise,
+.adults-choiсe,
 .child-choise {
   display: flex;
   margin: 0;
   align-items: center;
 }
 
-.adults-choise .book-label,
+.adults-choiсe .book-label,
 .child-choise .book-label {
   margin-right: auto;
 }
 
-.adults-choise {
+.adults-choiсe {
   width: 224px;
 }
 
@@ -702,7 +702,7 @@ margin-bottom: 0;
   font-weight: 700;
 }
 
-.fildset-label {
+.fieldset-label {
   display: block;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -714,7 +714,7 @@ margin-bottom: 0;
   background-repeat: no-repeat;
 }
 
-.infrastructure-check:disabled ~ .fildset-label {
+.infrastructure-check:disabled ~ .fieldset-label {
   color: var(--basic-grey-disabled);
   background-image: url(../img/checkbox-off-dis.svg);
 }
@@ -735,17 +735,17 @@ margin-bottom: 0;
   margin-bottom: 19px;
 }
 
-.infrastructure-check:checked ~ .fildset-label {
+.infrastructure-check:checked ~ .fieldset-label {
   background-image: url(../img/checkbox-on.svg);
   background-size: 27px 23px;
 }
 
-.infrastructure-check:disabled:checked ~ .fildset-label {
+.infrastructure-check:disabled:checked ~ .fieldset-label {
   background-image: url(../img/checkbox-on-dis.svg);
   background-size: 27px 23px;
 }
 
-.infrastructure-check:focus ~ .fildset-label {
+.infrastructure-check:focus ~ .fieldset-label {
   outline: 2px solid var(--basic-black);
   outline-offset: 2px;
 }
